@@ -1,0 +1,449 @@
+@charset "UTF-8";
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 182.13333px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 50.66667px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  html {
+    font-size: 43.46667px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@font-face {
+  font-family: "icon-font";
+  src: url(fonts/iconfont.woff);
+}
+
+@font-face {
+  font-family: "icon-font1";
+  src: url(fonts/iconfont1.woff);
+}
+
+@font-face {
+  font-family: "icon-font3";
+  src: url(fonts/iconfont3.woff);
+}
+
+.icon-font1 {
+  font-family: 'icon-font1' !important;
+}
+
+.icon-font {
+  font-family: 'icon-font' !important;
+}
+
+.icon-font3 {
+  font-family: 'icon-font3' !important;
+}
+
+.icon-share-copy:before {
+  content: "\e82d";
+}
+
+.icon-homeline:before {
+  content: "\e783";
+}
+
+.icon-information:before {
+  content: "\e7e6";
+}
+
+.icon-add:before {
+  content: "\e775";
+}
+
+.icon-collect:before {
+  content: "\e7b1";
+}
+
+.icon-back:before {
+  content: "\e833";
+}
+
+.icon-delete:before {
+  content: "\e836";
+}
+
+.icon-close:before {
+  content: "\e779";
+}
+
+.icon-succed:before {
+  content: "\e7da";
+}
+
+.icon-endorse:before {
+  content: "\e7b4";
+}
+
+.icon-clock:before {
+  content: "\e789";
+}
+
+.icon-myline:before {
+  content: "\e792";
+}
+
+.icon-like:before {
+  content: "\e790";
+}
+
+.icon-3:before {
+  content: "\e65c";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  background: url("image/bali.jpg") no-repeat top center;
+  background-size: cover;
+  font-family: '微软雅黑';
+}
+
+.header {
+  width: 100%;
+  height: 0.95rem;
+  background: rgba(40, 94, 202, 0.4);
+  position: relative;
+  font-size: 0.3rem;
+  line-height: 1.25rem;
+  color: #fff;
+}
+
+.header .left {
+  line-height: 1.25rem;
+  position: absolute;
+  left: 0.2rem;
+  top: 0;
+}
+
+.header .logo {
+  width: 100px;
+  height: 1.25rem;
+  letter-spacing: 10px;
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.25rem;
+  font-size: 0.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.header .right {
+  position: absolute;
+  right: 0.2rem;
+  top: 0;
+}
+
+.box {
+  width: 100%;
+  height: 3.9rem;
+  padding: 0.17rem;
+  box-sizing: border-box;
+}
+
+.box .clock {
+  width: 100%;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  height: 2.5rem;
+  position: relative;
+  margin-bottom: 0.2rem;
+  font: bold 500%/1 Rockwell, serif;
+}
+
+.box .clock span {
+  display: block;
+  float: left;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 0.1rem;
+  margin-top: 0.22rem;
+}
+
+.box .clock .hour {
+  margin-left: 0.265rem;
+}
+
+.box .clock li {
+  padding: 0.4rem 0.35rem;
+  text-align: center;
+  border-radius: 0.1rem;
+  background: white;
+  float: left;
+  margin-top: 0.32rem;
+  color: #000;
+  font-size: 1rem;
+  box-shadow: 3px 3px 10px 1px black;
+}
+
+.box .add {
+  width: 100%;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  height: 1rem;
+  position: relative;
+}
+
+.box .add .jiahao {
+  font-size: 0.39rem;
+  color: #fff;
+  position: absolute;
+  left: 0.3rem;
+  top: 0.3rem;
+}
+
+.box .add input {
+  width: 5.3rem;
+  height: 100%;
+  line-height: 0.39rem;
+  font-size: 0.39rem;
+  font-family: '微软雅黑';
+  border: 0;
+  outline: none;
+  color: #fff;
+  background: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.box .add .star {
+  width: 1rem;
+  height: 100%;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 0.39rem;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box .active {
+  display: none;
+}
+
+.addcon {
+  width: 100%;
+  height: 7.3rem;
+  padding: 0 0.17rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.addcon .xinzen {
+  width: 100%;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  height: 1rem;
+  line-height: 1rem;
+  color: #fff;
+  margin: 0.05rem 0 0.1rem 0;
+  position: relative;
+}
+
+.addcon .xinzen .mibox {
+  width: 6.55rem;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.addcon .xinzen .mibox .span {
+  display: block;
+  float: left;
+}
+
+.addcon .xinzen .mibox .del {
+  color: #fff;
+  float: right;
+  display: none;
+}
+
+.addcon .xinzen .mibox::after {
+  content: "";
+  width: 6.15rem;
+  height: 1px;
+  background: #999da3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 0;
+  display: none;
+}
+
+.addcon .xinzen.done .mibox::after {
+  display: block;
+}
+
+.addcon .xinzen.done .del {
+  display: block;
+}
+
+.addcon .xinzen.done .span {
+  color: #999da3;
+}
+
+.addcon .xinzen.delete .del {
+  display: block;
+}
+
+.addcon .delyi {
+  width: 2.5rem;
+  height: 0.55rem;
+  line-height: 0.6rem;
+  background: #eee;
+  float: left;
+  margin-left: 0.5rem;
+  text-align: center;
+  border-radius: 0.1rem;
+}
+
+.addcon .delwei {
+  width: 2.5rem;
+  height: 0.55rem;
+  line-height: 0.6rem;
+  background: #eee;
+  float: right;
+  margin-right: 0.5rem;
+  text-align: center;
+  border-radius: 0.1rem;
+}
+
+.tanchu {
+  width: 100%;
+  height: 11.2rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 1.15rem;
+  background: url("image/bali.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.tanchu .tannei {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  font-size: 0.39rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.tanchu .tannei .tanmid {
+  width: 100%;
+  height: 11.2rem;
+  outline: none;
+  border: 0;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 0.3rem;
+  font-family: '微软雅黑';
+}
+
+.foot {
+  width: 100%;
+  height: 1.15rem;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.foot li {
+  width: 33.33%;
+  height: 100%;
+  font-size: 0.39rem;
+  text-align: center;
+  line-height: 1.15rem;
+  color: #fff;
+}
+
+.foot .home {
+  float: left;
+}
+
+.foot .share {
+  float: right;
+}
+
+.foot .ani {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -0.3rem;
+}

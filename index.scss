@@ -1,0 +1,322 @@
+@import "new";
+@include useRem(750px);
+@font-face {
+  font-family: "icon-font";
+  src:url(fonts/iconfont.woff);
+}
+@font-face {
+  font-family: "icon-font1";
+  src:url(fonts/iconfont1.woff);
+}
+@font-face {
+  font-family: "icon-font3";
+  src:url(fonts/iconfont3.woff);
+}
+
+.icon-font1{
+  font-family: 'icon-font1' !important;
+}
+.icon-font{
+  font-family: 'icon-font' !important;
+}
+.icon-font3{
+  font-family: 'icon-font3' !important;
+}
+.icon-share-copy:before { content: "\e82d"; }
+.icon-homeline:before { content: "\e783"; }
+.icon-information:before { content: "\e7e6"; }
+.icon-add:before { content: "\e775"; }
+.icon-collect:before { content: "\e7b1"; }
+.icon-back:before { content: "\e833"; }
+.icon-delete:before { content: "\e836"; }
+.icon-close:before { content: "\e779"; }
+.icon-succed:before { content: "\e7da"; }
+.icon-endorse:before { content: "\e7b4"; }
+.icon-clock:before { content: "\e789"; }
+.icon-myline:before { content: "\e792"; }
+.icon-like:before { content: "\e790"; }
+.icon-3:before { content: "\e65c"; }
+
+*{
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+body{
+  margin:0;
+  font-size: 16px;
+  background: url("image/bali.jpg") no-repeat top center;
+  background-size: cover;
+  font-family: '微软雅黑';
+}
+
+.header{
+  width:100%;
+  height:0.95rem;
+  background:rgba(40,94,202,0.4);
+  position: relative;
+  font-size: 0.3rem;
+  line-height: 1.25rem;
+  color:#fff;
+  .left{
+    line-height: 1.25rem;
+    position: absolute;
+    left:0.2rem;
+    top:0;
+  }
+  .logo{
+    width:100px;
+    height:1.25rem;
+    letter-spacing: 10px;
+    font-weight:200;
+    text-align: center;
+    line-height: 1.25rem;
+    font-size: 0.5rem;
+    @include juzhong();
+  }
+  .right{
+    position: absolute;
+    right:0.2rem;
+    top:0;
+  }
+}
+.box{
+  width:100%;
+  height:3.9rem;
+  padding:0.17rem;
+  box-sizing: border-box;
+  .clock{
+    width:100%;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.5);
+    height: 2.5rem;
+    position: relative;
+    margin-bottom: 0.2rem;
+    font: bold 500%/1 Rockwell, serif;
+    span{
+      display:block;
+      float:left;
+      color:#fff;
+      font-size: 1rem;
+      padding:0.5rem 0.1rem;
+      margin-top: 0.22rem;
+    }
+    .hour{
+      margin-left: 0.265rem;
+    }
+    li{
+      padding:0.4rem 0.35rem;
+      text-align: center;
+      border-radius: 0.1rem;
+      background: rgba(255,255,255,1);
+      float:left;
+      margin-top: 0.32rem;
+      color: #000;
+      font-size: 1rem;
+      box-shadow: 3px 3px 10px 1px black;
+    }
+  }
+  .add{
+    width:100%;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.5);
+    height: 1rem;
+    position: relative;
+    .jiahao{
+      font-size: 0.39rem;
+      color:#fff;
+      position: absolute;
+      left:0.3rem;
+      top:0.3rem;
+    }
+      input{
+        width:5.3rem;
+        height: 100%;
+        line-height: 0.39rem;
+        font-size: 0.39rem;
+        font-family: '微软雅黑';
+        border:0;
+        outline: none;
+        color:#fff;
+        background: none;
+        @include juzhong();
+      }
+    .star{
+      width:1rem;
+      height:100%;
+      text-align: center;
+      line-height: 1rem;
+      font-size:  0.39rem;
+      color:#fff;
+      position: absolute;
+      //right:0.3rem;
+      //top:0.3rem;
+      top:0;
+      right:0;
+    }
+  }
+  .active{
+    display: none;
+  }
+}
+.addcon{
+  width:100%;
+  height:7.3rem;
+  padding:0 0.17rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  .xinzen{
+    width:100%;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.5);
+    height: 1rem;
+    line-height: 1rem;
+    color:#fff;
+    margin: 0.05rem 0 0.1rem 0;
+    position: relative;
+    //&::after{
+    //  content: '';
+    //  height:
+    //}
+    .mibox{
+      width:6.55rem;
+      height:100%;
+      //background: red;
+      @include juzhong();
+      .span{
+        display:block;
+        float:left
+      }
+      .del{
+        color:#fff;
+       float:right;
+        display:none;
+      }
+      //.delete{
+      //
+      //}
+      &::after{
+        content:"";
+        width:6.15rem;
+        height:1px;
+        background: rgb(153,157,163);
+        position: absolute;
+        top:0;
+        bottom:0;
+        margin:auto 0;
+        left:0;
+        display:none;
+      }
+    }
+  }
+  .xinzen.done{
+    .mibox::after{
+      display:block;
+    }
+    .del{
+      display:block;
+      //color:rgb(153,157,163);
+    }
+    .span{
+      color:rgb(153,157,163);
+    }
+  }
+.xinzen.delete{
+  .del{
+    display:block;
+  }
+}
+.delyi{
+  width:2.5rem;
+  height:0.55rem;
+  line-height: 0.6rem;
+  background: #eee;
+  float:left;
+  margin-left: 0.5rem;
+  text-align: center;
+  border-radius: 0.1rem;
+}
+  .delwei{
+    width:2.5rem;
+    height:0.55rem;
+    line-height: 0.6rem;
+    background: #eee;
+    float:right;
+    margin-right: 0.5rem;
+    text-align: center;
+    border-radius: 0.1rem;
+  }
+}
+.tanchu{
+  width:100%;
+  height:11.2rem;
+  //padding:0 0.17rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  left:0;
+  bottom:1.15rem;
+  background: url("image/bali.jpg") no-repeat top center;
+  background-size: cover;
+  .tannei{
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius: 4px;
+    //background: rgba(255,255,255,1);
+    font-size:  0.39rem;
+    //line-height: 1rem;
+    font-weight:300;
+    color:#fff;
+    //margin: 0.05rem 0 0.1rem 0;
+    .tanmid{
+      width:100%;
+      height:11.2rem;
+      outline: none;
+      border:0;
+      background: rgba(0,0,0,0.2);
+      color:#fff;
+      font-size:  0.3rem;
+      font-family: '微软雅黑';
+    }
+  }
+}
+//.animation{
+//  animation: zhuan 3s ease .3s both;
+//}
+//@keyframes zhuan{
+//  0%{transform:translate3d(0.2rem,0,0)}
+//  100%{transform:translate3d(0,0,0)}
+//}
+.foot{
+  width:100%;
+  height:1.15rem;
+  background: rgba(0,0,0, 0.3);
+  position: relative;
+  li{
+    width:33.33%;
+    height:100%;
+    font-size: 0.39rem;
+    text-align: center;
+    line-height: 1.15rem;
+    //float:left;
+    color:#fff;
+  }
+}
+.foot .home{
+  float:left;
+}
+.foot .share{
+  float:right;
+}
+.foot .ani{
+  font-size: 1.2rem;
+  position: absolute;
+  left:0;
+  right:0;
+  margin:0 auto;
+  top:-0.3rem;
+}
